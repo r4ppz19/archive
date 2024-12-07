@@ -1,5 +1,7 @@
 package com.r4ppz.controller;
 
+import com.r4ppz.model.UserPassModel;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -7,6 +9,8 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class MainViewController {
+    UserPassModel userPassModel = new UserPassModel();
+
     @FXML
     private TextField usernameTextField;
     @FXML
@@ -18,11 +22,13 @@ public class MainViewController {
 
     @FXML
     public void signInAction(ActionEvent actionEvent) {
-
+        System.out.println(userPassModel.getUsername());
+        System.out.println(userPassModel.getPassword());
     }
 
     @FXML
     public void signUpAction(ActionEvent actionEvent) {
-        
-    } 
+        userPassModel.setUsername(usernameTextField.getText());
+        userPassModel.setPassword(passwordTextField.getText());
+    }
 }

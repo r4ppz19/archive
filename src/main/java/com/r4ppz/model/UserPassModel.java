@@ -4,6 +4,8 @@ public class UserPassModel {
     private String username;
     private String passwod;
 
+    public UserPassModel() {}
+
     public UserPassModel(String username, String password) {
         this.username = username;
         this.passwod = password;
