@@ -6,6 +6,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class Main extends Application{
@@ -15,8 +16,11 @@ public class Main extends Application{
 
     @Override
     public void start(Stage mainStage) throws Exception {
+        Image imageIcon = new Image(Objects.requireNonNull(getClass().getResource("/image/r4ppz-logo.png")).toString());
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/LoginView.fxml")));
         Scene scene = new Scene(root);
+        mainStage.getIcons().add(imageIcon);
+        mainStage.setTitle("Welcome :)");
         mainStage.setScene(scene);
         mainStage.setResizable(false);
         mainStage.show();
