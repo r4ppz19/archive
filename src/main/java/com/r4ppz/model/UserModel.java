@@ -1,12 +1,12 @@
 package com.r4ppz.model;
 
-public class UserPassModel {
+public class UserModel {
     private String username;
     private String passwod;
 
-    public UserPassModel() {}
+    public UserModel() {}
 
-    public UserPassModel(String username, String password) {
+    public UserModel(String username, String password) {
         this.username = username;
         this.passwod = password;
     }

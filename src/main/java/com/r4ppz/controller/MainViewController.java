@@ -1,6 +1,6 @@
 package com.r4ppz.controller;
 
-import com.r4ppz.model.UserPassModel;
+import com.r4ppz.model.UserModel;
 import com.r4ppz.view.SignUpAlert;
 
 import javafx.event.ActionEvent;
@@ -10,7 +10,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 public class MainViewController {
-    private UserPassModel userPassModel = new UserPassModel();
+    private UserModel userModel = new UserModel();
     private SignUpAlert signUpAlert = new SignUpAlert();
 
     @FXML
@@ -24,14 +24,14 @@ public class MainViewController {
 
     @FXML
     public void signInAction(ActionEvent actionEvent) {
-        System.out.println(userPassModel.getUsername());
-        System.out.println(userPassModel.getPassword());
+        System.out.println(userModel.getUsername());
+        System.out.println(userModel.getPassword());
     }
 
     @FXML
     public void signUpAction(ActionEvent actionEvent) throws Exception {
-        userPassModel.setUsername(usernameTextField.getText());
-        userPassModel.setPassword(passwordTextField.getText());
+        userModel.setUsername(usernameTextField.getText());
+        userModel.setPassword(passwordTextField.getText());
         signUpAlert.showSignUpView();
     }
 }
