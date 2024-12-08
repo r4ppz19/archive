@@ -5,6 +5,7 @@ import java.util.Objects;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class SignUpAlert {
@@ -13,6 +14,8 @@ public class SignUpAlert {
         Stage signUpAlert = new Stage();
         Scene scene = new Scene(root);
         signUpAlert.setScene(scene);
-        signUpAlert.show();
+        signUpAlert.setResizable(false);
+        signUpAlert.initModality(Modality.APPLICATION_MODAL);
+        signUpAlert.showAndWait();
     }
 }
