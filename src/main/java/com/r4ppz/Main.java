@@ -20,7 +20,7 @@ public class Main extends Application{
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/LoginView.fxml")));
         Scene scene = new Scene(root);
         mainStage.getIcons().add(imageIcon);
-        mainStage.setTitle("Welcome :)");
+        mainStage.setTitle("Archive");
         mainStage.setScene(scene);
         mainStage.setResizable(false);
         mainStage.show();
