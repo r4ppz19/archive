@@ -1,18 +1,18 @@
 package com.r4ppz.view;
 
-import java.util.Objects;
+import com.r4ppz.Main;
 
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class SignUpAlert {
+    private Main main = new Main();
+
     public void showSignUpView() throws Exception {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/SignUpAlert.fxml")));
         Stage signUpAlert = new Stage();
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(main.fxmlLoader.fxmlLoader("/view/SignUpAlert.fxml"));
+        signUpAlert.getIcons().add(main.imageLoader.loadImage("/image/white-circle-icon.png"));
         signUpAlert.setScene(scene);
         signUpAlert.setResizable(false);
         signUpAlert.initModality(Modality.APPLICATION_MODAL);
