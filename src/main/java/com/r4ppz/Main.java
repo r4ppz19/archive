@@ -7,7 +7,8 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-public class Main extends Application{
+public class Main extends Application {
+    // Public instances of the util classes
     public ImageLoader imageLoader = new ImageLoader();
     public FxmlLoader fxmlLoader = new FxmlLoader();
 

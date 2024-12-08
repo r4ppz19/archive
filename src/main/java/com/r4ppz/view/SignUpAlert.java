@@ -7,6 +7,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class SignUpAlert {
+    // Create instance of the Main class to access the util classes instances methods
     private Main main = new Main();
 
     public void showSignUpView() throws Exception {
