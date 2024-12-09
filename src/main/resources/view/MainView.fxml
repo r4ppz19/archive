@@ -3,15 +3,10 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.VBox?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../css/MainViewDesign.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.r4ppz.controller.MainViewController">
    <children>
-      <VBox alignment="CENTER" layoutX="50.0" layoutY="65.0" prefHeight="235.0" prefWidth="501.0" spacing="20.0">
-         <children>
-            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="86.0" prefWidth="293.0" text="WELCOME NIGGA" />
-            <Button fx:id="fuckYouButton" mnemonicParsing="false" onAction="#fuckYouButtonAction" text="FUCK YOU" />
-         </children>
-      </VBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="154.0" layoutY="134.0" prefHeight="86.0" prefWidth="293.0" text="WELCOME NIGGA" />
+      <Button fx:id="fuckYouButton" layoutX="263.0" layoutY="246.0" mnemonicParsing="false" onAction="#fuckYouButtonAction" text="Click me for free reward 😮😮😮" />
    </children>
 </AnchorPane>
