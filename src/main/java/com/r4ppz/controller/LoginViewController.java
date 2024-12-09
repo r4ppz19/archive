@@ -3,7 +3,7 @@ package com.r4ppz.controller;
 import com.r4ppz.model.DefaultUser;
 import com.r4ppz.model.UserModel;
 import com.r4ppz.view.SignInAlert;
-import com.r4ppz.view.SignUpAlert;
+import com.r4ppz.view.SuccessAlert;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,7 +13,7 @@ import javafx.scene.control.TextField;
 
 public class LoginViewController {
     private UserModel userModel = new UserModel();
-    private SignUpAlert signUpAlert = new SignUpAlert();
+    private SuccessAlert signUpAlert = new SuccessAlert();
     private SignInAlert signInAlert = new SignInAlert();
     private DefaultUser defaultUser = new DefaultUser();
 

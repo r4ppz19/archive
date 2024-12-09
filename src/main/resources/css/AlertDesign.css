@@ -5,6 +5,7 @@
 
 .label {
     -fx-text-fill: #000000;
+    -fx-font-size: 14;
 }
 
 .button {
