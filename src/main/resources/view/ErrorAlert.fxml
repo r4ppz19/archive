@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="200.0" stylesheets="@../css/AlertDesign.css" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.r4ppz.controller.ErrorAlertViewController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="47.0" prefWidth="200.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="73.0" text="Error" />
+         </children>
+      </VBox>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="16.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="okButton" mnemonicParsing="false" onAction="#okButtonAction" prefHeight="23.0" prefWidth="43.0" text="ok" />
+         </children>
+      </VBox>
+   </children>
+</VBox>
