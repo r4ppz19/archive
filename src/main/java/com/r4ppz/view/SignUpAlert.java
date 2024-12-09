@@ -1,6 +1,5 @@
 package com.r4ppz.view;
 
-import com.r4ppz.Main;
 import com.r4ppz.util.FxmlLoader;
 import com.r4ppz.util.ImageLoader;
 
@@ -11,8 +10,6 @@ import javafx.stage.Stage;
 public class SignUpAlert {
     private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
     private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
-
-
 
     public void showSignUpView() throws Exception {
         Stage signUpAlert = new Stage();

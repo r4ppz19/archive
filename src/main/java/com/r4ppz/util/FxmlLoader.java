@@ -12,7 +12,8 @@ public class FxmlLoader {
     private static FxmlLoader fxmlLoader;
 
     // Private constructor to prevent instantiation
-    private FxmlLoader() {}
+    private FxmlLoader() {
+    }
 
     // Public static method to get the single instance of FxmlLoader class
     public static FxmlLoader getInstanceFxmlLoader() {
@@ -22,7 +23,7 @@ public class FxmlLoader {
 
         return fxmlLoader;
     }
-    
+
     public Parent fxmlLoader(String fxmlPath) throws IOException {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(fxmlPath)));
         return root;
