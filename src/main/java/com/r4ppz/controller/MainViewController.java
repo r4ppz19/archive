@@ -26,10 +26,13 @@ public class MainViewController {
 
     @FXML
     public void signInAction(ActionEvent actionEvent) throws Exception {
-        System.out.println(userModel.getUsername());
-        System.out.println(userModel.getPassword());
         
-        signInAlert.showSignInView();
+        if (usernameTextField.getText().equals(userModel.getUsername()) && passwordTextField.getText().equals(userModel.getPassword())) {
+            signInAlert.showSignInView();
+        } else {
+            System.out.println("Maybe enter user n pass, you fucking idiot");
+        }
+        
     }
 
     @FXML
@@ -43,7 +46,7 @@ public class MainViewController {
             usernameTextField.clear();
             passwordTextField.clear();
         } else {
-            System.out.println("Maybe enter a fucking username and password you fucking idiot! ???");
+            System.out.println("What the fuck are you doing???");
         }
 
     }
