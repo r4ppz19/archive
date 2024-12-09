@@ -1,6 +1,7 @@
 package com.r4ppz.controller;
 
 import com.r4ppz.model.UserModel;
+import com.r4ppz.view.SignInAlert;
 import com.r4ppz.view.SignUpAlert;
 
 import javafx.event.ActionEvent;
@@ -12,6 +13,7 @@ import javafx.scene.control.TextField;
 public class MainViewController {
     private UserModel userModel = new UserModel();
     private SignUpAlert signUpAlert = new SignUpAlert();
+    private SignInAlert signInAlert = new SignInAlert();
 
     @FXML
     private TextField usernameTextField;
@@ -23,9 +25,11 @@ public class MainViewController {
     private Button signUpButton;
 
     @FXML
-    public void signInAction(ActionEvent actionEvent) {
+    public void signInAction(ActionEvent actionEvent) throws Exception {
         System.out.println(userModel.getUsername());
         System.out.println(userModel.getPassword());
+        
+        signInAlert.showSignInView();
     }
 
     @FXML
@@ -35,6 +39,9 @@ public class MainViewController {
             userModel.setUsername(usernameTextField.getText());
             userModel.setPassword(passwordTextField.getText());
             signUpAlert.showSignUpView();
+
+            usernameTextField.clear();
+            passwordTextField.clear();
         } else {
             System.out.println("Maybe enter a fucking username and password you fucking idiot! ???");
         }
