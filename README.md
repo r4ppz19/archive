@@ -1,6 +1,6 @@
-# Portfolio Software
+# Archive Application
 
-This repository contains a JavaFX-based portfolio software application. The application showcases different views and functionalities that can be used to present your portfolio in a software format.
+This repository contains a JavaFX-based application that allows users to archive all kinds of stuff. Users can log in to view, interact with, and manage their files.
 
 
 ### R4PPZ

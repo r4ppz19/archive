@@ -1,5 +1,6 @@
 package com.r4ppz.controller;
 
+import com.r4ppz.model.DefaultUser;
 import com.r4ppz.model.UserModel;
 import com.r4ppz.view.SignInAlert;
 import com.r4ppz.view.SignUpAlert;
@@ -14,6 +15,7 @@ public class MainViewController {
     private UserModel userModel = new UserModel();
     private SignUpAlert signUpAlert = new SignUpAlert();
     private SignInAlert signInAlert = new SignInAlert();
+    private DefaultUser defaultUser = new DefaultUser();
 
     @FXML
     private TextField usernameTextField;
@@ -29,8 +31,11 @@ public class MainViewController {
         
         if (usernameTextField.getText().equals(userModel.getUsername()) && passwordTextField.getText().equals(userModel.getPassword())) {
             signInAlert.showSignInView();
+        } else if (usernameTextField.getText().equals(defaultUser.getUsername()) && passwordTextField.getText().equals(defaultUser.getPassword())) {
+            System.out.println("THE THE FUCK ???? WHO ARE YOU ??");
+            signInAlert.showSignInView();
         } else {
-            System.out.println("Maybe enter user n pass, you fucking idiot");
+            System.out.println("Nuh uhh");
         }
         
     }
