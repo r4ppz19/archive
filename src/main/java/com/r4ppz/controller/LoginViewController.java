@@ -2,8 +2,8 @@ package com.r4ppz.controller;
 
 import com.r4ppz.model.DefaultUser;
 import com.r4ppz.model.UserModel;
-import com.r4ppz.view.ErrorAlert;
-import com.r4ppz.view.SuccessAlert;
+import com.r4ppz.view.ErrorAlertView;
+import com.r4ppz.view.SuccessAlertView;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -13,9 +13,9 @@ import javafx.scene.control.TextField;
 
 public class LoginViewController {
     private UserModel userModel = new UserModel();
-    private SuccessAlert signUpAlert = new SuccessAlert();
+    private SuccessAlertView signUpAlertView = new SuccessAlertView();
     private DefaultUser defaultUser = new DefaultUser();
-    private ErrorAlert errorAlert = new ErrorAlert();
+    private ErrorAlertView errorAlertView = new ErrorAlertView();
 
     @FXML
     private TextField usernameTextField;
@@ -44,13 +44,13 @@ public class LoginViewController {
                 && passwordTextField.getText() != null && !passwordTextField.getText().isEmpty()) {
             userModel.setUsername(usernameTextField.getText());
             userModel.setPassword(passwordTextField.getText());
-            signUpAlert.showSignUpView();
+            signUpAlertView.showSignUpView();
 
             usernameTextField.clear();
             passwordTextField.clear();
         } else {
             System.out.println("What the fuck are you doing???");
-            errorAlert.showErrorAlertView();
+            errorAlertView.showErrorAlertView();
         }
 
     }
