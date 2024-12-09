@@ -32,21 +32,24 @@ public class LoginViewController {
 
     @FXML
     public void signInAction(ActionEvent actionEvent) throws Exception {
-        
-        if (usernameTextField.getText().equals(userModel.getUsername()) && passwordTextField.getText().equals(userModel.getPassword())) {
-        } else if (usernameTextField.getText().equals(defaultUser.getUsername()) && passwordTextField.getText().equals(defaultUser.getPassword())) {
+
+        if (usernameTextField.getText().equals(userModel.getUsername())
+                && passwordTextField.getText().equals(userModel.getPassword())
+                || usernameTextField.getText().equals(defaultUser.getUsername())
+                && passwordTextField.getText().equals(defaultUser.getPassword())) {
+
             System.out.println("THE THE FUCK ???? WHO ARE YOU ??");
 
             // Get the statge and close it
             Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
-            currentStage.close(); 
-            
+            currentStage.close();
+
             mainView.mainView();
         } else {
             System.out.println("Nuh uhh");
             errorAlertView.showErrorAlertView();
         }
-        
+
     }
 
     @FXML
