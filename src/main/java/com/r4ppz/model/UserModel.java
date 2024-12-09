@@ -2,13 +2,13 @@ package com.r4ppz.model;
 
 public class UserModel {
     private String username;
-    private String passwod;
+    private String password;
 
     public UserModel() {}
 
     public UserModel(String username, String password) {
         this.username = username;
-        this.passwod = password;
+        this.password = password;
     }
 
     public void setUsername(String username) {
@@ -16,7 +16,7 @@ public class UserModel {
     }
 
     public void setPassword(String password) {
-        this.passwod = password;
+        this.password = password;
     }
 
     public String getUsername() {
@@ -24,6 +24,6 @@ public class UserModel {
     } 
 
     public String getPassword() {
-        return passwod;
+        return password;
     }
 }

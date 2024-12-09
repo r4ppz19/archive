@@ -30,8 +30,7 @@ public class MainViewController {
 
     @FXML
     public void signUpAction(ActionEvent actionEvent) throws Exception {
-        if (usernameTextField.getText() != null && !usernameTextField.getText().isEmpty()
-            && passwordTextField.getText() != null && !passwordTextField.getText().isEmpty()) {
+        if (usernameTextField.getText() != null && !usernameTextField.getText().isEmpty() && passwordTextField.getText() != null && !passwordTextField.getText().isEmpty()) {
             userModel.setUsername(usernameTextField.getText());
             userModel.setPassword(passwordTextField.getText());
             signUpAlert.showSignUpView();
