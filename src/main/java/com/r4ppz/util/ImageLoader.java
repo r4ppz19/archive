@@ -8,11 +8,25 @@ import javafx.scene.image.Image;
 
 public class ImageLoader {
 
+    // Private static instance variable of ImageLoader
+    private static ImageLoader imageLoader;
+
     // Cache to store loaded iamges
     private Map<String, Image> imageCache = new HashMap<>();
 
-    public Image loadImage(String imagePath) {
+    // Private constructor to prevent instantiation
+    private ImageLoader() {
+    }
 
+    // Public static method to get the single instance of ImageLoader class
+    public static ImageLoader getInstanceImageLoader() {
+        if (imageLoader == null) {
+            imageLoader = new ImageLoader();
+        }
+        return imageLoader;
+    }
+
+    public Image loadImage(String imagePath) {
         // Check if the image is already in the cache
         if (imageCache.containsKey(imagePath)) {
             return imageCache.get(imagePath);

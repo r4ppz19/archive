@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
     
-    public ImageLoader imageLoader = new ImageLoader();
+    private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
     private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader(); 
 
     public static void main(String[] args) {
