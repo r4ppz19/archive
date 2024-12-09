@@ -11,7 +11,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class MainViewController {
+public class LoginViewController {
     private UserModel userModel = new UserModel();
     private SignUpAlert signUpAlert = new SignUpAlert();
     private SignInAlert signInAlert = new SignInAlert();
