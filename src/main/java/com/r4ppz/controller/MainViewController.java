@@ -21,8 +21,8 @@ public class MainViewController {
     private Button fuckYouButton;
     
     @FXML
-    public void fuckYouButtonAction(ActionEvent actionEvent) {
-        
+    public void fuckYouButtonAction(ActionEvent actionEvent) throws Exception {
+
     }
 
     public void moveButton() {
