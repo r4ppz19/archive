@@ -10,7 +10,6 @@ public class FxmlLoader {
 
     // Private static instance variable of FxmlLoader
     private static FxmlLoader fxmlLoader;
-
     // Private constructor to prevent instantiation
     private FxmlLoader() {
     }

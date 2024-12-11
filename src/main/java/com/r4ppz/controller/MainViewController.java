@@ -7,28 +7,28 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 public class MainViewController {
-    private int width = 400;
-    private int hight = 200;
+    private int width = 600;
+    private int hight = 400;
 
     Random random = new Random();
 
     @FXML
     public void initialize() {
-        fuckYouButton.setOnMouseEntered(event -> moveButton());
+        clickMeButton.setOnMouseEntered(event -> moveButton());
     }
 
     @FXML
-    private Button fuckYouButton;
+    private Button clickMeButton;
     
     @FXML
-    public void fuckYouButtonAction(ActionEvent actionEvent) throws Exception {
-
+    public void clickMeButtonAction(ActionEvent actionEvent) throws Exception {
+        System.out.println("FUCK YOO BITCH!");
     }
 
     public void moveButton() {
-        int x = random.nextInt(width + 1);
-        int y = random.nextInt(hight + 1);
-        fuckYouButton.setLayoutX(x);
-        fuckYouButton.setLayoutY(y);
+        int x = random.nextInt(width - 200);
+        int y = random.nextInt(hight - 200);
+        clickMeButton.setLayoutX(x);
+        clickMeButton.setLayoutY(y);
     }
 }
