@@ -31,8 +31,13 @@ public class LoginViewController {
     private Button signUpButton;
 
     @FXML
-    public void passwordTextFieldAction() throws Exception{
-        signInAction(new ActionEvent());
+    public void passwordTextFieldAction(ActionEvent actionEvent) throws Exception{
+        signInAction(actionEvent);
+    }
+
+    @FXML
+    public void usernameTextFieldAction(ActionEvent actionEvent) throws Exception {
+        signInAction(actionEvent);
     }
 
     @FXML
@@ -58,7 +63,7 @@ public class LoginViewController {
     }
 
     @FXML
-    public void signUpAction() throws Exception {
+    public void signUpAction(ActionEvent actionEvent) throws Exception {
         if (usernameTextField.getText() != null && !usernameTextField.getText().isEmpty()
                 && passwordTextField.getText() != null && !passwordTextField.getText().isEmpty()) {
             userModel.setUsername(usernameTextField.getText());
