@@ -30,17 +30,6 @@ public class LoginViewController {
     @FXML
     private Button signUpButton;
 
-/*     @FXML
-    public void initialize() {
-        passwordTextField.setOnAction(event -> {
-            try {
-                signInAction(new ActionEvent());
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        });
-    } */
-
     @FXML
     public void passwordTextFieldAction() throws Exception{
         signInAction(new ActionEvent());
