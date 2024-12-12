@@ -10,7 +10,7 @@ public class MainView {
     private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
     private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 
-    public void mainView() throws Exception {
+    public void showMainView() throws Exception {
         Stage mainView = new Stage();
         Scene scene = new Scene(fxmlLoader.fxmlLoader("/view/MainView.fxml"));
         mainView.getIcons().add(imageLoader.loadImage("/image/white-circle-icon.png"));

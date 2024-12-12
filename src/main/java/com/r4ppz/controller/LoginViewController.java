@@ -3,7 +3,7 @@ package com.r4ppz.controller;
 import com.r4ppz.model.DefaultUser;
 import com.r4ppz.model.UserModel;
 import com.r4ppz.view.ErrorAlertView;
-import com.r4ppz.view.MainView;
+import com.r4ppz.view.TrollView;
 import com.r4ppz.view.SuccessAlertView;
 
 import javafx.event.ActionEvent;
@@ -19,7 +19,7 @@ public class LoginViewController {
     private SuccessAlertView signUpAlertView = new SuccessAlertView();
     private DefaultUser defaultUser = new DefaultUser();
     private ErrorAlertView errorAlertView = new ErrorAlertView();
-    private MainView mainView = new MainView();
+    private TrollView trollView = new TrollView();
 
     @FXML
     private TextField usernameTextField;
@@ -54,7 +54,7 @@ public class LoginViewController {
             Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             currentStage.close();
 
-            mainView.mainView();
+            trollView.showTrollView();
         } else {
             System.out.println("Nuh uhh");
             errorAlertView.showErrorAlertView();
