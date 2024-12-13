@@ -25,13 +25,13 @@ public class SuccessAlertView {
     private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
     private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 
-    public void showSignUpView() throws Exception {
-        Stage signUpAlert = new Stage();
+    public void successAlertView() throws Exception {
+        Stage successAlert = new Stage();
         Scene scene = new Scene(fxmlLoader.fxmlLoader("/view/SuccessAlert.fxml"));
-        signUpAlert.getIcons().add(imageLoader.loadImage("/image/white-circle-icon.png"));
-        signUpAlert.setScene(scene);
-        signUpAlert.setResizable(false);
-        signUpAlert.initModality(Modality.APPLICATION_MODAL);
-        signUpAlert.showAndWait();
+        successAlert.getIcons().add(imageLoader.loadImage("/image/white-circle-icon.png"));
+        successAlert.setScene(scene);
+        successAlert.setResizable(false);
+        successAlert.initModality(Modality.APPLICATION_MODAL);
+        successAlert.showAndWait();
     }
 }

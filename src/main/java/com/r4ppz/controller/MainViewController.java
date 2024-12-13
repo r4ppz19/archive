@@ -3,6 +3,7 @@ package com.r4ppz.controller;
 import java.io.File;
 
 import com.r4ppz.util.HandleFile;
+import com.r4ppz.view.SuccessAlertView;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -11,6 +12,9 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class MainViewController {
+    private SuccessAlertView aSuccessAlertView = SuccessAlertView.getInstanSuccessAlertView();
+
+
     @FXML
     private Button uploadButton;
 
@@ -22,8 +26,10 @@ public class MainViewController {
         if (selectedFile != null) {
             handleFile.copyFileToProject(selectedFile, "src/main/resources/uploads");
             System.out.println("File uploaded successfully.");
+            aSuccessAlertView.successAlertView();
         } else {
             System.out.println("File selection cancelled.");
+            
         }
     }
 }

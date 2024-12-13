@@ -69,7 +69,7 @@ public class LoginViewController {
                 && passwordTextField.getText() != null && !passwordTextField.getText().isEmpty()) {
             userModel.setUsername(usernameTextField.getText());
             userModel.setPassword(passwordTextField.getText());
-            signUpAlertView.showSignUpView();
+            signUpAlertView.successAlertView();
 
             usernameTextField.clear();
             passwordTextField.clear();
