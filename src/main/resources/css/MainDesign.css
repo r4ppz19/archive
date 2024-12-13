@@ -3,9 +3,16 @@
     -fx-font-family: Lexend, JetBrains Mono;
 }
 
+.vBox1 {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #020202;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
 .label {
     -fx-text-fill: #000000;
-    -fx-font-size: 30;
+    -fx-font-size: 15;
 }
 
 .button {
