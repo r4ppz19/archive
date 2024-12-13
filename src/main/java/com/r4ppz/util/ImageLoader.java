@@ -10,7 +10,6 @@ public class ImageLoader {
 
     private static ImageLoader imageLoader;
 
-    private Map<String, Image> imageCache = new HashMap<>();
 
     private ImageLoader() {
     }
@@ -22,6 +21,8 @@ public class ImageLoader {
         return imageLoader;
     }
 
+    // Using cache mechanism for loading an image
+    private Map<String, Image> imageCache = new HashMap<>();
     public Image loadImage(String imagePath) {
         if (imageCache.containsKey(imagePath)) {
             return imageCache.get(imagePath);
