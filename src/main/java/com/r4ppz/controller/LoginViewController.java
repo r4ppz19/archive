@@ -3,7 +3,7 @@ package com.r4ppz.controller;
 import com.r4ppz.model.DefaultUser;
 import com.r4ppz.model.UserModel;
 import com.r4ppz.view.ErrorAlertView;
-import com.r4ppz.view.TrollView;
+import com.r4ppz.view.MainView;
 import com.r4ppz.view.SuccessAlertView;
 
 import javafx.event.ActionEvent;
@@ -17,8 +17,8 @@ import javafx.stage.Stage;
 public class LoginViewController {
     private ErrorAlertView errorAlertView = ErrorAlertView.getInstancErrorAlertView();
     private SuccessAlertView signUpAlertView = SuccessAlertView.getInstanSuccessAlertView();
-    private TrollView trollView = TrollView.getInstancTrollView();
     private DefaultUser defaultUser = DefaultUser.getInstancDefaultUser();
+    private MainView mainView = MainView.getInstancMainView();
 
     private UserModel userModel = new UserModel();
 
@@ -48,14 +48,12 @@ public class LoginViewController {
                 && passwordTextField.getText().equals(userModel.getPassword())
                 || usernameTextField.getText().equals(defaultUser.getUsername())
                 && passwordTextField.getText().equals(defaultUser.getPassword())) {
-
-            System.out.println("THE THE FUCK ???? WHO ARE YOU ??");
-
+                    
             // Get the statge and close it
             Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             currentStage.close();
 
-            trollView.showTrollView();
+            mainView.showMainView();
         } else {
             System.out.println("Nuh uhh");
             errorAlertView.showErrorAlertView();
@@ -74,7 +72,6 @@ public class LoginViewController {
             usernameTextField.clear();
             passwordTextField.clear();
         } else {
-            System.out.println("What the fuck are you doing???");
             errorAlertView.showErrorAlertView();
         }
 
