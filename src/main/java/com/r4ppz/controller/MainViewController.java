@@ -25,7 +25,6 @@ public class MainViewController {
 
         if (selectedFile != null) {
             handleFile.copyFileToProject(selectedFile, "src/main/resources/uploads");
-            System.out.println("File uploaded successfully.");
 
             successAlertView.showSuccessAlertView();
         } else {
