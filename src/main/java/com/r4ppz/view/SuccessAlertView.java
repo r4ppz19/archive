@@ -25,7 +25,7 @@ public class SuccessAlertView {
     private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
     private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 
-    public void successAlertView() throws Exception {
+    public void showSuccessAlertView() throws Exception {
         Stage successAlert = new Stage();
         Scene scene = new Scene(fxmlLoader.fxmlLoader("/view/SuccessAlert.fxml"));
         successAlert.getIcons().add(imageLoader.loadImage("/image/white-circle-icon.png"));

@@ -18,7 +18,6 @@ public class LoginViewController {
     private ErrorAlertView errorAlertView = ErrorAlertView.getInstancErrorAlertView();
     private SuccessAlertView signUpAlertView = SuccessAlertView.getInstanSuccessAlertView();
     private DefaultUser defaultUser = DefaultUser.getInstancDefaultUser();
-    private MainView mainView = MainView.getInstancMainView();
 
     private UserModel userModel = new UserModel();
 
@@ -32,7 +31,7 @@ public class LoginViewController {
     private Button signUpButton;
 
     @FXML
-    public void passwordTextFieldAction(ActionEvent actionEvent) throws Exception{
+    public void passwordTextFieldAction(ActionEvent actionEvent) throws Exception {
         signInAction(actionEvent);
     }
 
@@ -47,15 +46,16 @@ public class LoginViewController {
         if (usernameTextField.getText().equals(userModel.getUsername())
                 && passwordTextField.getText().equals(userModel.getPassword())
                 || usernameTextField.getText().equals(defaultUser.getUsername())
-                && passwordTextField.getText().equals(defaultUser.getPassword())) {
-                    
+                        && passwordTextField.getText().equals(defaultUser.getPassword())) {
+
             // Get the statge and close it
             Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             currentStage.close();
 
+            // Show the main view
+            MainView mainView = MainView.getInstancMainView();
             mainView.showMainView();
         } else {
-            System.out.println("Nuh uhh");
             errorAlertView.showErrorAlertView();
         }
 
@@ -65,9 +65,10 @@ public class LoginViewController {
     public void signUpAction(ActionEvent actionEvent) throws Exception {
         if (usernameTextField.getText() != null && !usernameTextField.getText().isEmpty()
                 && passwordTextField.getText() != null && !passwordTextField.getText().isEmpty()) {
+
             userModel.setUsername(usernameTextField.getText());
             userModel.setPassword(passwordTextField.getText());
-            signUpAlertView.successAlertView();
+            signUpAlertView.showSuccessAlertView();
 
             usernameTextField.clear();
             passwordTextField.clear();
@@ -76,6 +77,5 @@ public class LoginViewController {
         }
 
     }
-
 
 }

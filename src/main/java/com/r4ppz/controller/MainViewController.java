@@ -12,24 +12,25 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class MainViewController {
-    private SuccessAlertView aSuccessAlertView = SuccessAlertView.getInstanSuccessAlertView();
+    private SuccessAlertView successAlertView = SuccessAlertView.getInstanSuccessAlertView();
 
 
     @FXML
     private Button uploadButton;
 
     @FXML
-    public void uploadButtonAction(ActionEvent actionEvent) throws Exception{
+    public void uploadButtonAction(ActionEvent actionEvent) throws Exception {
         HandleFile handleFile = HandleFile.getInstanceHandleFile();
         File selectedFile = handleFile.fileChooser((Stage) ((Node) actionEvent.getSource()).getScene().getWindow());
 
         if (selectedFile != null) {
             handleFile.copyFileToProject(selectedFile, "src/main/resources/uploads");
             System.out.println("File uploaded successfully.");
-            aSuccessAlertView.successAlertView();
+
+            successAlertView.showSuccessAlertView();
         } else {
             System.out.println("File selection cancelled.");
-            
+
         }
     }
 }
