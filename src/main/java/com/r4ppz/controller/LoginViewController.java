@@ -18,10 +18,9 @@ public class LoginViewController {
     private ErrorAlertView errorAlertView = ErrorAlertView.getInstancErrorAlertView();
     private SuccessAlertView signUpAlertView = SuccessAlertView.getInstanSuccessAlertView();
     private TrollView trollView = TrollView.getInstancTrollView();
-
+    private DefaultUser defaultUser = DefaultUser.getInstancDefaultUser();
 
     private UserModel userModel = new UserModel();
-    private DefaultUser defaultUser = new DefaultUser();
 
     @FXML
     private TextField usernameTextField;
