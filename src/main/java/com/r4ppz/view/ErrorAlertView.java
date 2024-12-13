@@ -8,6 +8,20 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class ErrorAlertView {
+    private static ErrorAlertView errorAlertView;
+
+    private ErrorAlertView() {
+
+    }
+
+    public static ErrorAlertView getInstancErrorAlertView() {
+        if (errorAlertView == null) {
+            errorAlertView = new ErrorAlertView();
+        }
+
+        return errorAlertView;
+     }
+
     private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
     private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 

@@ -7,6 +7,20 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class TrollView {
+    private static TrollView trollView;
+
+    private TrollView() {
+
+    }
+
+    public static TrollView getInstancTrollView() {
+        if (trollView == null) {
+            trollView = new TrollView();
+        }
+
+        return trollView;
+    }
+
     private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
     private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 

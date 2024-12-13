@@ -14,7 +14,7 @@ public class TrollViewController {
     private int width = 600;
     private int hight = 400;
 
-    private MainView mainView = new MainView();
+    private MainView mainView = MainView.getInstancMainView();
 
     Random random = new Random();
 

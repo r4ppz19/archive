@@ -8,6 +8,20 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class SuccessAlertView {
+    private static SuccessAlertView successAlertView;
+
+    private SuccessAlertView() {
+
+    }
+
+    public static SuccessAlertView getInstanSuccessAlertView() {
+        if (successAlertView == null) {
+            successAlertView = new SuccessAlertView();
+        }
+
+        return successAlertView;
+    }
+
     private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
     private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 

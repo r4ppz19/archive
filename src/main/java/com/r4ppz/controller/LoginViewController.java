@@ -15,11 +15,13 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class LoginViewController {
+    private ErrorAlertView errorAlertView = ErrorAlertView.getInstancErrorAlertView();
+    private SuccessAlertView signUpAlertView = SuccessAlertView.getInstanSuccessAlertView();
+    private TrollView trollView = TrollView.getInstancTrollView();
+
+
     private UserModel userModel = new UserModel();
-    private SuccessAlertView signUpAlertView = new SuccessAlertView();
     private DefaultUser defaultUser = new DefaultUser();
-    private ErrorAlertView errorAlertView = new ErrorAlertView();
-    private TrollView trollView = new TrollView();
 
     @FXML
     private TextField usernameTextField;

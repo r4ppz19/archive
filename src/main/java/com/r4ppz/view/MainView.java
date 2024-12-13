@@ -7,6 +7,20 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class MainView {
+    private static MainView mainView;
+
+    private MainView() {
+
+    }
+
+    public static MainView getInstancMainView() {
+        if (mainView == null) {
+            mainView = new MainView();
+        }
+
+        return mainView;
+    }
+
     private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
     private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 
