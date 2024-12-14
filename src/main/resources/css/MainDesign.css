@@ -3,7 +3,7 @@
     -fx-font-family: Lexend, JetBrains Mono;
 }
 
-.vBox1 {
+.Box {
     -fx-background-color: #ffffff;
     -fx-border-color: #020202;
     -fx-border-radius: 5;
