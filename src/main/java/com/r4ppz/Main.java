@@ -2,6 +2,7 @@ package com.r4ppz;
 
 import com.r4ppz.util.FxmlLoader;
 import com.r4ppz.util.ImageLoader;
+// import com.r4ppz.view.FileManagerView;
 
 import javafx.application.Application;
 import javafx.scene.Scene;
@@ -24,6 +25,9 @@ public class Main extends Application {
         mainStage.setScene(scene);
         mainStage.setResizable(false);
         mainStage.show();
+
+        // FileManagerView fileManagerView = FileManagerView.getInstanceFileManagerView();
+        // fileManagerView.showFileManagerView();
     }
 
 }
