@@ -3,7 +3,7 @@
     -fx-font-family: Lexend, JetBrains Mono;
 }
 
-.Box {
+.Default {
     -fx-background-color: #ffffff;
     -fx-border-color: #020202;
     -fx-border-radius: 5;
@@ -63,8 +63,8 @@
 
 /* Focused state */
 .listView:focused {
-    -fx-focus-color: transparent;
-    -fx-faint-focus-color: transparent;
+    -fx-focus-color: #e2e2e2;
+    -fx-faint-focus-color: #e2e2e2;
 }
 
 .list-cell:selected {
@@ -72,6 +72,7 @@
     -fx-text-fill: #000000;
 }
 
+/*! FILE MANAGER VBOX (FILE CONTAINER) */
 .fileContainer {
 /*     -fx-top-anchor: 10.0;
     -fx-bottom-anchor: 10.0;
@@ -79,9 +80,9 @@
     -fx-right-anchor: 10.0; */
 
     -fx-background-color: #ffffff;
-    -fx-border-color: #020202;
+/*     -fx-border-color: #020202;
     -fx-border-radius: 5;
-    -fx-background-radius: 5;
+    -fx-background-radius: 5; */
 
     -fx-padding: 5px 5px 5px 5px; /* top, right, bottom, left */
 }
@@ -96,7 +97,7 @@
     -fx-border-radius: 5;
     -fx-background-radius: 5;
 
-    -fx-padding: 5px 5px 5px 5px; /* top, right, bottom, left */
+    -fx-padding: 5px 5px 5px 5px; /* top, right, bottom, left */ 
 }
 
 .file-box:hover {
