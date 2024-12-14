@@ -12,9 +12,10 @@
 
 .label {
     -fx-text-fill: #000000;
-    -fx-font-size: 15;
+    -fx-font-size: 12;
 }
 
+/*! BUTTON DESIGN */
 .button {
     -fx-background-color: #ffffff;
     -fx-text-fill: #000000;
@@ -38,8 +39,8 @@
     -fx-faint-focus-color: transparent;
 }
 
-
-/* List View Design */
+/*? NOT FUCKING USEFULL RIGHT NOW*/
+/*! LIST VIEW DESIGN */
 .listView {
     -fx-background-color: #ffffff;
     -fx-border-color: #020202;
@@ -69,4 +70,46 @@
 .list-cell:selected {
     -fx-background-color: #e2e2e2;
     -fx-text-fill: #000000;
+}
+
+.fileContainer {
+/*     -fx-top-anchor: 10.0;
+    -fx-bottom-anchor: 10.0;
+    -fx-left-anchor: 10.0;
+    -fx-right-anchor: 10.0; */
+
+    -fx-background-color: #ffffff;
+    -fx-border-color: #020202;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+
+    -fx-padding: 5px 5px 5px 5px; /* top, right, bottom, left */
+}
+
+/*! FILE BOX INDIVIDUAL BOX INSIDE OF THE FILE MANAGER VBOX */
+.file-box {
+    /* -fx-text-fill: #000000;
+    -fx-font-size: 15; */
+
+    -fx-background-color: #ffffff;
+    -fx-border-color: #020202;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+
+    -fx-padding: 5px 5px 5px 5px; /* top, right, bottom, left */
+}
+
+.file-box:hover {
+    -fx-background-color: #e2e2e2;
+    -fx-text-fill: #000000;
+}
+
+.file-box:pressed {
+    -fx-background-color: #d0d0d0;
+    -fx-text-fill: #0033ff;
+}
+
+.file-box:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
 }
