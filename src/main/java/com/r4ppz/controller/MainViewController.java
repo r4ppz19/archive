@@ -24,7 +24,7 @@ public class MainViewController {
 
     @FXML
     public void initialize() {
-        refreshFileContainer();
+        refresh();
     }
 
 
@@ -46,7 +46,7 @@ public class MainViewController {
         }
     }
 
-    private void refreshFileContainer() {
+    private void refresh() {
         fileContainer.getChildren().clear();
 
         File directory = new File("src/main/resources/uploads/");
