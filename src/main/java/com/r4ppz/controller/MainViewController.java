@@ -14,8 +14,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class MainViewController {
-    private SuccessAlertView successAlertView = SuccessAlertView.getInstanSuccessAlertView();
-
 
     @FXML
     private Button uploadButton;
@@ -37,6 +35,7 @@ public class MainViewController {
         if (selectedFile != null) {
             handleFile.copyFileToProject(selectedFile, "src/main/resources/uploads");
 
+            SuccessAlertView successAlertView = SuccessAlertView.getInstanSuccessAlertView();
             successAlertView.showSuccessAlertView();
 
             initialize();

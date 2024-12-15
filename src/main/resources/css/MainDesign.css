@@ -72,7 +72,7 @@
     -fx-text-fill: #000000;
 }
 
-/*! FILE MANAGER VBOX (FILE CONTAINER) */
+/*? FILE MANAGER VBOX (FILE CONTAINER) */
 .fileContainer {
 /*     -fx-top-anchor: 10.0;
     -fx-bottom-anchor: 10.0;
@@ -87,7 +87,8 @@
     -fx-padding: 5px 5px 5px 5px; /* top, right, bottom, left */
 }
 
-/*! FILE BOX INDIVIDUAL BOX INSIDE OF THE FILE MANAGER VBOX */
+/*? FILE BOX INDIVIDUAL BOX INSIDE OF THE FILE MANAGER VBOX */
+/*!  THIS IS DYNAMIC BTW SO DO NOT CHANGE THE NAME */
 .file-box {
     /* -fx-text-fill: #000000;
     -fx-font-size: 15; */
