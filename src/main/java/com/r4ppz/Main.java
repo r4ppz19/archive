@@ -25,9 +25,6 @@ public class Main extends Application {
         mainStage.setScene(scene);
         mainStage.setResizable(false);
         mainStage.show();
-
-        // FileManagerView fileManagerView = FileManagerView.getInstanceFileManagerView();
-        // fileManagerView.showFileManagerView();
     }
 
 }
