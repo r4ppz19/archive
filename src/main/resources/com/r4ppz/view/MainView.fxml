@@ -34,14 +34,6 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </padding>
             </Button>
-            <Button mnemonicParsing="false" text="Delete">
-               <tooltip>
-                  <Tooltip text="Delete File" />
-               </tooltip>
-               <padding>
-                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-               </padding>
-            </Button>
          </children>
       </HBox>
       <AnchorPane layoutX="177.0" layoutY="12.0" prefHeight="370.0" prefWidth="413.0" styleClass="Default" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
