@@ -27,8 +27,8 @@ public class ErrorAlertView {
 
     public void showErrorAlertView() throws Exception {
         Stage errorAlert = new Stage();
-        Scene scene = new Scene(fxmlLoader.fxmlLoader("/view/ErrorAlert.fxml"));
-        errorAlert.getIcons().add(imageLoader.loadImage("/image/white-circle-icon.png"));
+        Scene scene = new Scene(fxmlLoader.fxmlLoader("/com/r4ppz/view/ErrorAlert.fxml"));
+        errorAlert.getIcons().add(imageLoader.loadImage("/com/r4ppz/image/white-circle-icon.png"));
         errorAlert.setScene(scene);
         errorAlert.setResizable(false);
         errorAlert.initModality(Modality.APPLICATION_MODAL);

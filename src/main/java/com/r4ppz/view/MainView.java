@@ -26,8 +26,8 @@ public class MainView {
 
     public void showMainView() throws Exception {
         Stage mainView = new Stage();
-        Scene scene = new Scene(fxmlLoader.fxmlLoader("/view/MainView.fxml"));
-        mainView.getIcons().add(imageLoader.loadImage("/image/white-circle-icon.png"));
+        Scene scene = new Scene(fxmlLoader.fxmlLoader("/com/r4ppz/view/MainView.fxml"));
+        mainView.getIcons().add(imageLoader.loadImage("/com/r4ppz/image/white-circle-icon.png"));
         mainView.setScene(scene);
         mainView.setResizable(false);
         mainView.setTitle("Archive");

@@ -33,7 +33,7 @@ public class MainViewController {
         File selectedFile = handleFile.fileChooser((Stage) ((Node) actionEvent.getSource()).getScene().getWindow());
 
         if (selectedFile != null) {
-            handleFile.copyFileToProject(selectedFile, "src/main/resources/uploads");
+            handleFile.copyFileToProject(selectedFile, "src/main/resources/com/r4ppz/uploads");
 
             SuccessAlertView successAlertView = SuccessAlertView.getInstanSuccessAlertView();
             successAlertView.showSuccessAlertView();
@@ -48,7 +48,7 @@ public class MainViewController {
     private void refresh() {
         fileContainer.getChildren().clear();
 
-        File directory = new File("src/main/resources/uploads/");
+        File directory = new File("src/main/resources/com/r4ppz/uploads/");
         if (directory.isDirectory()) {
             for (File file : directory.listFiles()) {
                 VBox fileBox = new VBox();

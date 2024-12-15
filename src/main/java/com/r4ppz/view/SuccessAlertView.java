@@ -27,8 +27,8 @@ public class SuccessAlertView {
 
     public void showSuccessAlertView() throws Exception {
         Stage successAlert = new Stage();
-        Scene scene = new Scene(fxmlLoader.fxmlLoader("/view/SuccessAlert.fxml"));
-        successAlert.getIcons().add(imageLoader.loadImage("/image/white-circle-icon.png"));
+        Scene scene = new Scene(fxmlLoader.fxmlLoader("/com/r4ppz/view/SuccessAlert.fxml"));
+        successAlert.getIcons().add(imageLoader.loadImage("/com/r4ppz/image/white-circle-icon.png"));
         successAlert.setScene(scene);
         successAlert.setResizable(false);
         successAlert.initModality(Modality.APPLICATION_MODAL);
