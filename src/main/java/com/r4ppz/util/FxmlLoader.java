@@ -22,7 +22,6 @@ public class FxmlLoader {
     }
 
     public Parent fxmlLoader(String fxmlPath) throws IOException {
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource(fxmlPath)));
-        return root;
+        return FXMLLoader.load(Objects.requireNonNull(getClass().getResource(fxmlPath)));
     }
 }

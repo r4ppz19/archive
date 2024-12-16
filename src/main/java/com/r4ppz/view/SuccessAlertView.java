@@ -22,8 +22,8 @@ public class SuccessAlertView {
         return successAlertView;
     }
 
-    private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
-    private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
+    private final FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
+    private final ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 
     public void showSuccessAlertView() throws Exception {
         Stage successAlert = new Stage();

@@ -22,8 +22,8 @@ public class ErrorAlertView {
         return errorAlertView;
      }
 
-    private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
-    private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
+    private final FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
+    private final ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 
     public void showErrorAlertView() throws Exception {
         Stage errorAlert = new Stage();

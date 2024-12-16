@@ -15,11 +15,11 @@ import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class LoginViewController {
-    private ErrorAlertView errorAlertView = ErrorAlertView.getInstancErrorAlertView();
-    private SuccessAlertView signUpAlertView = SuccessAlertView.getInstanSuccessAlertView();
-    private DefaultUser defaultUser = DefaultUser.getInstancDefaultUser();
+    private final ErrorAlertView errorAlertView = ErrorAlertView.getInstancErrorAlertView();
+    private final SuccessAlertView signUpAlertView = SuccessAlertView.getInstanSuccessAlertView();
+    private final DefaultUser defaultUser = DefaultUser.getInstancDefaultUser();
 
-    private UserModel userModel = new UserModel();
+    private final UserModel userModel = new UserModel();
 
     @FXML
     private TextField usernameTextField;
@@ -48,7 +48,7 @@ public class LoginViewController {
                 || usernameTextField.getText().equals(defaultUser.getUsername())
                         && passwordTextField.getText().equals(defaultUser.getPassword())) {
 
-            // Get the statge and close it
+            // Get the state and close it
             Stage currentStage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
             currentStage.close();
 

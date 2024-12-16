@@ -21,8 +21,8 @@ public class MainView {
         return mainView;
     }
 
-    private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
-    private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
+    private final FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
+    private final ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 
     public void showMainView() throws Exception {
         Stage mainView = new Stage();

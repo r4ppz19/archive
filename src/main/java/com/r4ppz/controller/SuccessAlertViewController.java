@@ -13,7 +13,7 @@ public class SuccessAlertViewController {
 
     @FXML
     public void okButtonAction(ActionEvent actionEvent) {
-        // Get the statge and close it
+        // Get the state and close it
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.close();
 

@@ -24,9 +24,7 @@ public class MainViewController {
     public void initialize() {
         refresh();
     }
-
-
-
+    
     @FXML
     public void uploadButtonAction(ActionEvent actionEvent) throws Exception {
         HandleFile handleFile = HandleFile.getInstanceHandleFile();

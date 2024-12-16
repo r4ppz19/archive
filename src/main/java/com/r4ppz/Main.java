@@ -10,8 +10,8 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    private ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
-    private FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
+    private final ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
+    private final FxmlLoader fxmlLoader = FxmlLoader.getInstanceFxmlLoader();
 
     public static void main(String[] args) {
         launch(args);

@@ -1,8 +1,8 @@
 package com.r4ppz.model;
 
 public class DefaultUser {
-    private String username = "r4ppz";
-    private String password = "12312005";
+    private final String username = "r4ppz";
+    private final String password = "12312005";
 
     private static DefaultUser defaultUser;
 
