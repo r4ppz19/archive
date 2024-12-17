@@ -16,6 +16,8 @@ public class WindowTest extends Application {
     public void start(Stage primaryStage) throws Exception {
         ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 
+
+        // Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/r4ppz/view/MainViewV2.fxml")));
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/r4ppz/view/MainView.fxml")));
         primaryStage.setScene(new Scene(root));
         primaryStage.getIcons().add(imageLoader.loadImage("/com/r4ppz/image/white-circle-icon.png"));

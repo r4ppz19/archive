@@ -1,0 +1,31 @@
+.background {
+    -fx-background-color: rgb(255, 255, 255);
+}
+
+.button {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-background-radius: 5;
+}
+
+.button:hover {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-text-fill: #000000;
+    -fx-border-color: rgb(0, 0, 0);
+    -fx-border-radius: 5;
+    -fx-border-width: 1px;
+}
+
+.button:pressed {
+    -fx-background-color: rgb(241, 241, 241);
+    -fx-text-fill: #0033ff;
+}
+
+.button:focused {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+.transparent {
+    -fx-background-color: rgba(0, 0, 0, 0);
+}
+
