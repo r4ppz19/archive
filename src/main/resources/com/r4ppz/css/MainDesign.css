@@ -3,89 +3,39 @@
     -fx-font-family: Lexend, JetBrains Mono;
 }
 
-.Default {
-    -fx-background-color: #ffffff;
-    -fx-border-color: #020202;
-    -fx-border-radius: 5;
-    -fx-background-radius: 5;
-}
-
-.label {
+/*? Label Style */
+.Label {
     -fx-text-fill: #000000;
     -fx-font-size: 12;
 }
 
-/*! BUTTON DESIGN */
-.button {
+/*? Button Style */
+.Button {
     -fx-background-color: #ffffff;
+    -fx-alignment: center;
+    -fx-padding: 2px;
+    -fx-font-size: 10;
     -fx-text-fill: #000000;
     -fx-border-color: #020202;
     -fx-border-radius: 5;
     -fx-background-radius: 5;
 }
 
-.button:hover {
+.Button:hover {
     -fx-background-color: #e2e2e2;
     -fx-text-fill: #000000;
 }
 
-.button:pressed {
+.Button:pressed {
     -fx-background-color: #d0d0d0;
     -fx-text-fill: #0033ff;
 }
 
-.button:focused {
+.Button:focused {
     -fx-focus-color: transparent;
     -fx-faint-focus-color: transparent;
 }
 
-/*? NOT FUCKING USEFULL RIGHT NOW*/
-/*! LIST VIEW DESIGN */
-.listView {
-    -fx-background-color: #ffffff;
-    -fx-border-color: #020202;
-    -fx-border-radius: 5;
-    -fx-background-radius: 5;
-    /* -fx-padding: 5px; */
-}
-
-/* Hover state */
-.listView:hover {
-    -fx-background-color: #e2e2e2;
-    -fx-text-fill: #000000;
-}
-
-/* Pressed state */
-.listView:pressed {
-    -fx-background-color: #d0d0d0;
-    -fx-text-fill: #0033ff;
-}
-
-/* Focused state */
-.listView:focused {
-    -fx-focus-color: #e2e2e2;
-    -fx-faint-focus-color: #e2e2e2;
-}
-
-.list-cell:selected {
-    -fx-background-color: #e2e2e2;
-    -fx-text-fill: #000000;
-}
-
-/*? FILE MANAGER VBOX (FILE CONTAINER) */
-.fileContainer {
-/*     -fx-top-anchor: 10.0;
-    -fx-bottom-anchor: 10.0;
-    -fx-left-anchor: 10.0;
-    -fx-right-anchor: 10.0; */
-
-    -fx-background-color: #ffffff;
-/*     -fx-border-color: #020202;
-    -fx-border-radius: 5;
-    -fx-background-radius: 5; */
-
-    -fx-padding: 5px 5px 5px 5px; /* top, right, bottom, left */
-}
 
 /*? FILE BOX INDIVIDUAL BOX INSIDE OF THE FILE MANAGER VBOX */
 /*!  THIS IS DYNAMIC BTW SO DO NOT CHANGE THE NAME */
@@ -114,4 +64,34 @@
 .file-box:focused {
     -fx-focus-color: transparent;
     -fx-faint-focus-color: transparent;
+}
+
+/*? Line Style */
+.Line {
+    -fx-stroke: #000000;
+    -fx-stroke-width: 1;
+    -fx-stroke-line-cap: round;
+    -fx-stroke-line-join: bevel;
+}
+
+.Default {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #020202;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+/*? FILE MANAGER VBOX (FILE CONTAINER) */
+.FileContainer {
+    /*     -fx-top-anchor: 10.0;
+        -fx-bottom-anchor: 10.0;
+        -fx-left-anchor: 10.0;
+        -fx-right-anchor: 10.0; */
+    
+        -fx-background-color: #ffffff;
+    /*     -fx-border-color: #020202;
+        -fx-border-radius: 5;
+        -fx-background-radius: 5; */
+    
+        -fx-padding: 5px 5px 5px 5px; /* top, right, bottom, left */
 }
