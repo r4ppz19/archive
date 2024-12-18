@@ -21,6 +21,8 @@ hs_err_pid*
 # Maven target directory
 target/
 
+# Ignore target directory
+/target/
 
 # Maven specific files
 target/
@@ -51,8 +53,26 @@ bin/
 *.iws
 out/
 
+# Ignore IDE specific files
+/.idea/
+/*.iml
+/.vscode/
+
 # VSCode
 .vscode/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Include Maven Wrapper files
+!.mvn/
+!mvnw
+!mvnw.cmd
+
+# Ignore other build tools
+/.gradle/
+/build/
 
 .github
 
