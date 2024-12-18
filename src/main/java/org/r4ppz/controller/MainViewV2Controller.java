@@ -53,7 +53,7 @@ public class MainViewV2Controller {
     }
 
     private void loadFilesToButton() {
-        File directory = new File("src/main/resources/com/r4ppz/uploads/");
+        File directory = new File("src/main/resources/org/r4ppz/uploads/");
         if (directory.isDirectory()) {
             for (File file : directory.listFiles()) {
                 String fileName = file.getName().replace(".pdf", "");
