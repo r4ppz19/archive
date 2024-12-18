@@ -17,8 +17,8 @@ public class WindowTest extends Application {
         ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
 
 
-        // Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/r4ppz/view/MainViewV2.fxml")));
-        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/r4ppz/view/MainView.fxml")));
+        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/r4ppz/view/MainViewV2.fxml")));
+        // Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/com/r4ppz/view/MainView.fxml")));
         primaryStage.setScene(new Scene(root));
         primaryStage.getIcons().add(imageLoader.loadImage("/com/r4ppz/image/white-circle-icon.png"));
         primaryStage.setTitle("Main View Test");
@@ -27,6 +27,6 @@ public class WindowTest extends Application {
 
     public static void main(String[] args) {
         launch(args);
-    }
+}
 
 }
