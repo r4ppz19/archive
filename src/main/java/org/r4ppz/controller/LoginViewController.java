@@ -9,7 +9,6 @@ import org.r4ppz.view.SuccessAlertView;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
@@ -58,7 +57,7 @@ public class LoginViewController {
     }
 
     @FXML
-    public void signUpAction(ActionEvent actionEvent) throws Exception {
+    public void signUpAction() throws Exception {
         if (usernameTextField.getText() != null && !usernameTextField.getText().isEmpty()
                 && passwordTextField.getText() != null && !passwordTextField.getText().isEmpty()) {
 

@@ -1,6 +1,7 @@
 package org.r4ppz.controller;
 
 import java.io.File;
+import java.util.Objects;
 
 import org.r4ppz.util.HandleFile;
 import org.r4ppz.util.ImageLoader;
@@ -53,7 +54,7 @@ public class MainViewV2Controller {
     private void loadFilesToButton() {
         File directory = new File("src/main/resources/org/r4ppz/uploads/");
         if (directory.isDirectory()) {
-            for (File file : directory.listFiles()) {
+            for (File file : Objects.requireNonNull(directory.listFiles())) {
                 String fileName = file.getName().replace(".pdf", "");
                 Button folderContainerButton = new Button(file.getName());
 
