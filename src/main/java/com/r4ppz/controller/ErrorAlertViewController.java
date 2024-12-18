@@ -7,8 +7,6 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 
 public class ErrorAlertViewController {
-    @FXML
-    private Button okButton;
 
     @FXML
     public void okButtonAction(ActionEvent actionEvent) {

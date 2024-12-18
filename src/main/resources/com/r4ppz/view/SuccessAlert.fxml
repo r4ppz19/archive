@@ -13,7 +13,7 @@
       </VBox>
       <VBox alignment="BOTTOM_CENTER" prefHeight="16.0" prefWidth="200.0">
          <children>
-            <Button fx:id="okButton" mnemonicParsing="false" onAction="#okButtonAction" prefHeight="23.0" prefWidth="43.0" text="ok" />
+            <Button mnemonicParsing="false" onAction="#okButtonAction" prefHeight="23.0" prefWidth="43.0" text="ok" />
          </children>
       </VBox>
    </children>
