@@ -48,7 +48,10 @@ public class MainViewV2Controller {
 
     private void refresh() {
         fileContainer.getChildren().clear();
+        loadFilesToButton();
+    }
 
+    private void loadFilesToButton() {
         File directory = new File("src/main/resources/com/r4ppz/uploads/");
         if (directory.isDirectory()) {
             for (File file : directory.listFiles()) {
@@ -63,7 +66,7 @@ public class MainViewV2Controller {
                 folderContainerButton.setGraphic(folderIcon);
                 folderContainerButton.getStyleClass().add("content-folder-button");
                 folderContainerButton.setContentDisplay(ContentDisplay.LEFT);
-                
+
                 fileContainer.getChildren().add(folderContainerButton);
             }
         } else {
