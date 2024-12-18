@@ -34,7 +34,7 @@
                         <Insets left="30.0" right="30.0" />
                      </VBox.margin>
                      <children>
-                        <Button fx:id="uploadButton" mnemonicParsing="false" onAction="#uploadButtonAction">
+                        <Button mnemonicParsing="false" onAction="#uploadButtonAction">
                            <graphic>
                               <ImageView fitHeight="31.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true" styleClass="button">
                                  <image>

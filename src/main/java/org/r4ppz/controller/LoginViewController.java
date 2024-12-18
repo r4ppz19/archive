@@ -25,10 +25,6 @@ public class LoginViewController {
     private TextField usernameTextField;
     @FXML
     private PasswordField passwordTextField;
-    @FXML
-    private Button signInButton;
-    @FXML
-    private Button signUpButton;
 
     @FXML
     public void passwordTextFieldAction(ActionEvent actionEvent) throws Exception {

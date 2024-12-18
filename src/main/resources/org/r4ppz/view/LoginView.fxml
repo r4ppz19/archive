@@ -10,8 +10,8 @@
    <children>
       <TextField fx:id="usernameTextField" layoutX="226.0" layoutY="104.0" onAction="#usernameTextFieldAction" />
       <PasswordField fx:id="passwordTextField" layoutX="226.0" layoutY="154.0" onAction="#passwordTextFieldAction" />
-      <Button fx:id="signInButton" layoutX="226.0" layoutY="215.0" mnemonicParsing="false" onAction="#signInAction" text="Sign In" />
-      <Button fx:id="signUpButton" layoutX="317.0" layoutY="215.0" mnemonicParsing="false" onAction="#signUpAction" text="Sign Up" />
+      <Button layoutX="226.0" layoutY="215.0" mnemonicParsing="false" onAction="#signInAction" text="Sign In" />
+      <Button layoutX="317.0" layoutY="215.0" mnemonicParsing="false" onAction="#signUpAction" text="Sign Up" />
       <Label layoutX="159.0" layoutY="108.0" text="Username: " />
       <Label layoutX="159.0" layoutY="158.0" text="Password:" />
    </children>

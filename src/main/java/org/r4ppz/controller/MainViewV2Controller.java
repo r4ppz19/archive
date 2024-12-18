@@ -18,8 +18,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class MainViewV2Controller {
-    @FXML
-    private Button uploadButton;
 
     @FXML
     private VBox fileContainer;
