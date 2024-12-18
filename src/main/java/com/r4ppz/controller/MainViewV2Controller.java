@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.ContentDisplay;
+import javafx.scene.control.Tooltip;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
@@ -55,6 +56,7 @@ public class MainViewV2Controller {
         File directory = new File("src/main/resources/com/r4ppz/uploads/");
         if (directory.isDirectory()) {
             for (File file : directory.listFiles()) {
+                String fileName = file.getName();
                 Button folderContainerButton = new Button(file.getName());
 
                 ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
@@ -66,6 +68,9 @@ public class MainViewV2Controller {
                 folderContainerButton.setGraphic(folderIcon);
                 folderContainerButton.getStyleClass().add("content-folder-button");
                 folderContainerButton.setContentDisplay(ContentDisplay.LEFT);
+
+                Tooltip FileNametooltip = new Tooltip(fileName);
+                folderContainerButton.setTooltip(FileNametooltip);
 
                 fileContainer.getChildren().add(folderContainerButton);
             }
