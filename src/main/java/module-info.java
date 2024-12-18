@@ -10,4 +10,7 @@ module com.r4ppz {
     exports org.r4ppz.controller;
     exports org.r4ppz.util;
     exports org.r4ppz.model;
+
+    // open test
+    exports org.r4ppz.test;
 }

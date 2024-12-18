@@ -57,7 +57,7 @@ public class LoginViewController {
     }
 
     @FXML
-    public void signUpAction() throws Exception {
+    public void signUpAction(ActionEvent actionEvent) throws Exception {
         if (usernameTextField.getText() != null && !usernameTextField.getText().isEmpty()
                 && passwordTextField.getText() != null && !passwordTextField.getText().isEmpty()) {
 

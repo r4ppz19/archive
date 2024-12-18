@@ -13,7 +13,6 @@ public class SuccessAlertViewController {
         // Get the state and close it
         Stage stage = (Stage) ((Node) actionEvent.getSource()).getScene().getWindow();
         stage.close();
-
         
     }
 }
