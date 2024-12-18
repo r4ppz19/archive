@@ -3,20 +3,23 @@ package com.r4ppz.controller;
 import java.io.File;
 
 import com.r4ppz.util.HandleFile;
+import com.r4ppz.util.ImageLoader;
 import com.r4ppz.view.SuccessAlertView;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.ContentDisplay;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class MainViewController {
-
+public class MainViewV2Controller {
     @FXML
     private Button uploadButton;
+
     @FXML
     private VBox fileContainer;
 
@@ -24,9 +27,9 @@ public class MainViewController {
     public void initialize() {
         refresh();
     }
-    
+
     @FXML
-    public void uploadButtonAction(ActionEvent actionEvent) throws Exception {
+    public void uploadButtonAction(ActionEvent actionEvent) throws Exception{
         HandleFile handleFile = HandleFile.getInstanceHandleFile();
         File selectedFile = handleFile.fileChooser((Stage) ((Node) actionEvent.getSource()).getScene().getWindow());
 
@@ -49,15 +52,19 @@ public class MainViewController {
         File directory = new File("src/main/resources/com/r4ppz/uploads/");
         if (directory.isDirectory()) {
             for (File file : directory.listFiles()) {
-                VBox fileBox = new VBox();
+                Button folderContainerButton = new Button(file.getName());
 
-
-                fileBox.getStyleClass().add("file-box");
-
-                Label fileNameLabel = new Label(file.getName());
-                fileBox.getChildren().add(fileNameLabel);
-
-                fileContainer.getChildren().add(fileBox);
+                ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
+                Image folderImage = imageLoader.loadImage("/com/r4ppz/image/folder-icon.png");
+                
+                ImageView folderIcon = new ImageView(folderImage);
+                folderIcon.setFitHeight(25);
+                folderIcon.setFitWidth(25);
+                folderContainerButton.setGraphic(folderIcon);
+                folderContainerButton.getStyleClass().add("content-folder-button");
+                folderContainerButton.setContentDisplay(ContentDisplay.LEFT);
+                
+                fileContainer.getChildren().add(folderContainerButton);
             }
         } else {
             System.out.println("Directory not found: " + directory.getAbsolutePath());
