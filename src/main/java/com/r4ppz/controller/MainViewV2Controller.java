@@ -56,21 +56,22 @@ public class MainViewV2Controller {
         File directory = new File("src/main/resources/com/r4ppz/uploads/");
         if (directory.isDirectory()) {
             for (File file : directory.listFiles()) {
-                String fileName = file.getName();
+                String fileName = file.getName().replace(".pdf", "");
                 Button folderContainerButton = new Button(file.getName());
 
                 ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
                 Image folderImage = imageLoader.loadImage("/com/r4ppz/image/folder-icon.png");
                 
                 ImageView folderIcon = new ImageView(folderImage);
-                folderIcon.setFitHeight(25);
-                folderIcon.setFitWidth(25);
+                folderIcon.setFitHeight(22);
+                folderIcon.setFitWidth(22);
                 folderContainerButton.setGraphic(folderIcon);
                 folderContainerButton.getStyleClass().add("content-folder-button");
                 folderContainerButton.setContentDisplay(ContentDisplay.LEFT);
 
-                Tooltip FileNametooltip = new Tooltip(fileName);
-                folderContainerButton.setTooltip(FileNametooltip);
+                Tooltip fileNametooltip = new Tooltip(fileName);
+                folderContainerButton.setTooltip(fileNametooltip);
+                fileNametooltip.getStyleClass().add("file-name-tooltip");
 
                 fileContainer.getChildren().add(folderContainerButton);
             }
