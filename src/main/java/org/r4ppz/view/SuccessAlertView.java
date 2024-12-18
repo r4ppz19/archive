@@ -1,7 +1,7 @@
-package com.r4ppz.view;
+package org.r4ppz.view;
 
-import com.r4ppz.util.FxmlLoader;
-import com.r4ppz.util.ImageLoader;
+import org.r4ppz.util.FxmlLoader;
+import org.r4ppz.util.ImageLoader;
 
 import javafx.scene.Scene;
 import javafx.stage.Modality;
@@ -27,8 +27,8 @@ public class SuccessAlertView {
 
     public void showSuccessAlertView() throws Exception {
         Stage successAlert = new Stage();
-        Scene scene = new Scene(fxmlLoader.fxmlLoader("/com/r4ppz/view/SuccessAlert.fxml"));
-        successAlert.getIcons().add(imageLoader.loadImage("/com/r4ppz/image/white-circle-icon.png"));
+        Scene scene = new Scene(fxmlLoader.fxmlLoader("/org/r4ppz/view/SuccessAlert.fxml"));
+        successAlert.getIcons().add(imageLoader.loadImage("/org/r4ppz/image/white-circle-icon.png"));
         successAlert.setScene(scene);
         successAlert.setResizable(false);
         successAlert.initModality(Modality.APPLICATION_MODAL);

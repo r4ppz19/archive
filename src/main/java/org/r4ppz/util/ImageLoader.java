@@ -1,4 +1,4 @@
-package com.r4ppz.util;
+package org.r4ppz.util;
 
 import java.util.Objects;
 import java.util.Map;

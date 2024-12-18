@@ -16,7 +16,7 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.openjfx</groupId>
+            <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>17.0.6</version>
         </dependency>
@@ -60,7 +60,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.r4ppz.archive/com.r4ppz.archive.Main</mainClass>
+                            <mainClass>org.r4ppz.archive/org.r4ppz.archive.Main</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>

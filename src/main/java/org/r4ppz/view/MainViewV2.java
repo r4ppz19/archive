@@ -1,7 +1,7 @@
-package com.r4ppz.view;
+package org.r4ppz.view;
 
-import com.r4ppz.util.FxmlLoader;
-import com.r4ppz.util.ImageLoader;
+import org.r4ppz.util.FxmlLoader;
+import org.r4ppz.util.ImageLoader;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -26,8 +26,8 @@ public class MainViewV2 {
 
     public void showMainViewV2() throws Exception {
         Stage mainViewV2 = new Stage();
-        Scene scene = new Scene(fxmlLoader.fxmlLoader("/com/r4ppz/view/MainViewV2.fxml"));
-        mainViewV2.getIcons().add(imageLoader.loadImage("/com/r4ppz/image/white-circle-icon.png"));
+        Scene scene = new Scene(fxmlLoader.fxmlLoader("/org/r4ppz/view/MainViewV2.fxml"));
+        mainViewV2.getIcons().add(imageLoader.loadImage("/org/r4ppz/image/white-circle-icon.png"));
         mainViewV2.setScene(scene);
         mainViewV2.setResizable(false);
         mainViewV2.setTitle("Archive");

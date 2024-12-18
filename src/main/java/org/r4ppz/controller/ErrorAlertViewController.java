@@ -1,4 +1,4 @@
-package com.r4ppz.controller;
+package org.r4ppz.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;

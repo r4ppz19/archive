@@ -1,4 +1,4 @@
-package com.r4ppz.util;
+package org.r4ppz.util;
 
 import java.io.IOException;
 import java.util.Objects;

@@ -1,4 +1,4 @@
-package com.r4ppz.model;
+package org.r4ppz.model;
 
 public class DefaultUser {
     private final String username = "r4ppz";

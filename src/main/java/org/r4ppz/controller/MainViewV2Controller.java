@@ -1,10 +1,10 @@
-package com.r4ppz.controller;
+package org.r4ppz.controller;
 
 import java.io.File;
 
-import com.r4ppz.util.HandleFile;
-import com.r4ppz.util.ImageLoader;
-import com.r4ppz.view.SuccessAlertView;
+import org.r4ppz.util.HandleFile;
+import org.r4ppz.util.ImageLoader;
+import org.r4ppz.view.SuccessAlertView;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -60,7 +60,7 @@ public class MainViewV2Controller {
                 Button folderContainerButton = new Button(file.getName());
 
                 ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
-                Image folderImage = imageLoader.loadImage("/com/r4ppz/image/folder-icon.png");
+                Image folderImage = imageLoader.loadImage("/org/r4ppz/image/folder-icon.png");
                 
                 ImageView folderIcon = new ImageView(folderImage);
                 folderIcon.setFitHeight(22);
