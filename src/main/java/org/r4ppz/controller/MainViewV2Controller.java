@@ -22,6 +22,8 @@ public class MainViewV2Controller {
 
     @FXML
     private VBox fileContainer;
+    @FXML
+    private ImageView pdfImageView;
 
     @FXML
     public void initialize() {
@@ -57,7 +59,7 @@ public class MainViewV2Controller {
             for (File file : Objects.requireNonNull(directory.listFiles())) {
                 String fileName = file.getName().replace(".pdf", "");
                 Button folderContainerButton = new Button(file.getName());
-
+                
                 ImageLoader imageLoader = ImageLoader.getInstanceImageLoader();
                 Image folderImage = imageLoader.loadImage("/org/r4ppz/image/folder-icon.png");
                 
@@ -68,6 +70,7 @@ public class MainViewV2Controller {
                 folderContainerButton.getStyleClass().add("content-folder-button");
                 folderContainerButton.setContentDisplay(ContentDisplay.LEFT);
 
+                // Add tooltip
                 Tooltip fileNametooltip = new Tooltip(fileName);
                 folderContainerButton.setTooltip(fileNametooltip);
                 fileNametooltip.getStyleClass().add("file-name-tooltip");
